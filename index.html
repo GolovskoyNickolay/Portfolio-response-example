@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9uoPKAJDdwQDFjDJq6eesnpb58t_tjk0&callback=initMap"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="node_modules/components-font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -728,5 +728,75 @@
              Deepika Padukone
         </div>
     </section>
+    <section class="contactMe wrapper-width">
+        <div class="title-wrap">
+            <span class="left-dash textTitle text_orange">&#x2015;</span>
+            <span class="textTitle font-Raleway">CONTACT ME.</span>
+            <span class="right-dash textTitle text_orange">&#x2015;</span>
+        </div>
+        <div class="font-Roboto contactMe__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aspernatur cupiditate enim eveniet explicabo facere fuga fugiat harum minus nam numquam odit, officia praesentium qui rerum similique soluta temporibus, tenetur?
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-block">
+                <div class="fa fa-phone contact-block__icon"></div>
+                <div class="contact-block__text font-Raleway">+123-456-789</div>
+            </div>
+            <div class="contact-block">
+                <div class="fa fa-envelope contact-block__icon"></div>
+                <div class="contact-block__text font-Raleway">example@mail.com</div>
+            </div>
+            <div class="contact-block">
+                <div class="fa fa-map-marker contact-block__icon"></div>
+                <div class="contact-block__text font-Raleway">Unicorn St.<br>Ukraine</div>
+            </div>
+        </div>
+            <form class="contact-form">
+                    <label class="contact-label" for="name">Name:
+                        <span class="orange-dot">&#x25cf;</span>
+                        <input class="contact-label__input" id="name" type="text">
+                    </label>
+                    <label class="contact-label" for="email">Email:
+                        <span class="orange-dot">&#x25cf;</span>
+                        <input class="contact-label__input" id="email" type="text">
+                    </label>
+                    <label class="contact-label" for="date">Date:
+                        <span class="orange-dot">&#x25cf;</span>
+                        <input class="contact-label__input" id="date" type="text">
+                    </label>
+                    <label class="contact-label" for="time">Time:
+                        <span class="orange-dot">&#x25cf;</span>
+                        <input class="contact-label__input" id="time" type="text">
+                    </label>
+                    <label class="contact-label_full-width" for="message">Your Message:
+                        <span class="orange-dot">&#x25cf;</span>
+                        <input class="contact-label__input contact-label__input_full-width" id="message" type="text">
+                    </label>
+                <input class="contact-form__submit" type="button" value="Make Request">
+            </form>
+
+    </section>
+    <section class="map" id="map"></section>
+    <section class="stayConnect wrapper-width">
+        <div class="title-wrap">
+            <span class="left-dash textTitle text_orange stayConnect__dash">&#x2015;</span>
+            <span class="textTitle font-Raleway">STAY CONNECTED WITH ME.</span>
+            <span class="right-dash textTitle text_orange stayConnect__dash">&#x2015;</span>
+            <p class="under-title font-Roboto">You will get frequently updated news</p>
+        </div>
+        <ul class="connect-social">
+            <li class="connect-social__icon fa fa-facebook"></li>
+            <li class="connect-social__icon fa fa-google-plus"></li>
+            <li class="connect-social__icon fa fa-twitter"></li>
+            <li class="connect-social__icon fa fa-linkedin"></li>
+            <li class="connect-social__icon fa fa-pinterest"></li>
+            <li class="connect-social__icon fa fa-youtube"></li>
+        </ul>
+    </section>
+    <hr>
+    <footer class="footer">
+        &copy;themax.com
+    </footer>
+
 </body>
 </html>

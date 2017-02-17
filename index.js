@@ -203,4 +203,27 @@ $(document).ready(function(){
             }
         });
     });
+    $('.contact-form__submit').click(function(){
+        $('.contact-label__input').each(function(){
+            if($(this).val() == ''){
+                $(this).siblings('.orange-dot').css('opacity','1');
+            }
+            else{
+                $(this).siblings('.orange-dot').css('opacity','0');
+            }
+        });
+
+    });
+    function initMap() {
+        var uluru = {lat: 47.8208036, lng: 35.1625966};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    initMap();
 });
